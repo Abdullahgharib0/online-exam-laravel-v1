@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('exam_name', 255);
             $table->integer('subject_id');
             $table->string('date', 255);
-            $table->string('time', 255);
+            $table->time('time' , $precision = 0);
             $table->integer('attempt');
             $table->float('marks')->default(0);
             $table->float('pass_marks')->default(0);
