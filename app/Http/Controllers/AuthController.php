@@ -35,21 +35,6 @@ class AuthController extends Controller
       }
       return view('register');
     }
-    public function loadRegisterD()
-    {
-      User::all();
-      if(Auth::user() && Auth::user()->type == "admin"){
-        return redirect('/admin/dashboard');
-      }
-      else if(Auth::user() && Auth::user()->type == "doctor"){
-        return redirect('/doctor/qna-ans');
-      }
-      elseif(Auth::user() && Auth::user()->type == "student"){
-        return redirect('/dashboard');
-      }
-      return view('registerD');
-    }
-
     public function studentRegister(Request $request)
     {
       $request->validate([
@@ -63,7 +48,6 @@ class AuthController extends Controller
       $user->name =$request->name;
       $user->email =$request->email;
       $user->password =Hash::make($request->password);
-      $user->type=$request->type;
       $user->save();
 
       return back()->with('success', 'your register has been successfully.');
