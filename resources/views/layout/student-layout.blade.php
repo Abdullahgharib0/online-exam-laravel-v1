@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="{{ ('../css/style.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
@@ -22,14 +22,17 @@
 	          <span class="sr-only">Toggle Menu</span>
 	        </button>
         </div>
-	  		<h1><a href="/admin/dashboard" class="logo bg-info">Hii,{{ Auth::user()->name }}</a></h1>
+	  		<h1><a href="/dashboard" class="logo bg-info">Hii,{{ Auth::user()->name }}</a></h1>
         <ul class="list-unstyled components mb-5">
           <li class="active">
-            <a href="/dashboard"><span class="fa fa-book mr-3"></span> Dashboard</a>
+            <a href="/dashboard"><span class="fa fa-book mr-3"></span> Exams</a>
           </li>
 
           <li class="active">
             <a href="{{ route('resultDashboard') }}"><span class="fa fa-list-alt mr-3"></span> Results</a>
+          </li>
+          <li class="active">
+            <a href="{{ route('edit_profile') }}"><span class="fa fa-user mr-3"></span> Profile</a>
           </li>
           
           <li>

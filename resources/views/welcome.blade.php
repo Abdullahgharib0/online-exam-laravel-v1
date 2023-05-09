@@ -99,7 +99,7 @@
                                   <div class="card h-100 shadow border-0">
                                       <img class="card-img-top" src="../images/11.jpeg" alt="..." />
                                       <div class="card-body p-4">
-                                          <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                          <div class="badge bg-primary bg-gradient rounded-pill mb-2">Hello Sir</div>
                                           <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3"> ما بعد الامتحان </h5></a>
                                           <h6 class="card-text mb-0"><span class="fa fa-chevron-circle-right"></span> تقييم الاختبارات وإعداد تقارير التقييم </h6><br>
                                           <h6 class="card-text mb-0"><span class="fa fa-chevron-circle-right"></span> النتيجة النهائية </h6><br>

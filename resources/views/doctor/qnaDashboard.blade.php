@@ -63,13 +63,13 @@
                   <div class="modal-body addModalAnswers">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="w-100" name="question" placeholder="Enter Question" required>
+                                <input type="text" class="w-100" name="question" placeholder="Enter Question ادخال السؤال " required>
                             </div>
                         </div>
 
                         <div class="row mt-2">
                             <div class="col">
-                                  <textarea name="explaination" class="w-100" placeholder="Enter your explaination(optional)"></textarea>
+                                  <textarea name="explaination" class="w-100" placeholder="Enter your explainationتفسير و توضيح الاجابه"></textarea>
                             </div>
                         </div>
                   </div>
@@ -196,8 +196,8 @@
             $("#addQna").submit(function (e) {
                 e.preventDefault();
 
-                if($(".answer").length > 2){
-                    $(".error").text("please add minimum two answers.");
+                if($(".answer").length < 4){
+                    $(".error").text("please add minimum four answers.");
                     setTimeout(function() {
                       $(".error").text("");
                     }, 2000);
@@ -258,7 +258,7 @@
                         <div class="row answers">
                           <input type="radio" name="is_correct" class="is_correct">
                             <div class="col">
-                                <input type="text" class="w-100" name="answers[]" placeholder="Enter Answer" required>
+                                <input type="text" class="w-100" name="answers[]" placeholder="Enter Answer ادخال الاجابة " required>
                             </div>
                             <button class="btn btn-danger removeButton">Remove</button>
                         </div>
@@ -305,8 +305,8 @@
                     }
                     
                   }
-
                   $('.showAnswers').html(html);
+
 
 
               });
@@ -322,18 +322,18 @@
                         }, 2000);
                     }
                     else{
-                      var html = `
-                            <div class="row editAnswers">
-                              <input type="radio" name="is_correct" class="edit_is_correct">
-                                <div class="col">
-                                    <input type="text" class="w-100" name="new_answers[]" placeholder="Enter Answer" required>
+                          var html = `
+                                <div class="row editAnswers">
+                                  <input type="radio" name="is_correct" class="edit_is_correct">
+                                    <div class="col">
+                                        <input type="text" class="w-100" name="new_answers[]" placeholder="Enter Answer ادخال الاجابة " required>
+                                    </div>
+                                    <button class="btn btn-danger removeButton">Remove</button>
                                 </div>
-                                <button class="btn btn-danger removeButton">Remove</button>
-                            </div>
-                    `;
+                        `;
 
-                      $(".editModalAnswers").append(html);
-                    }
+                        $(".editModalAnswers").append(html);
+                  }
 
             });
 
@@ -343,7 +343,7 @@
               var qid = $(this).attr('data-id');
 
               $.ajax({
-                url:"{{ route('getQnaDetails') }}",
+                url:"{{ route('getQnaDetails','id') }}",
                 type:"GET",
                 data:{qid:qid},
                 success:function(data){
@@ -368,7 +368,7 @@
                                   <input type="radio" name="is_correct" class="edit_is_correct"  `+checked+`>
                                     <div class="col">
                                         <input type="text" class="w-100" name="answers[`+qna['answers'][i]['id']+`]" 
-                                        placeholder="Enter Answer" value="`+qna['answers'][i]['answer']+`" required>
+                                        placeholder="Enter Answer ادخال الاجابة " value="`+qna['answers'][i]['answer']+`" required>
                                     </div>
                                     <button class="btn btn-danger removeButton removeAnswer" data-id="`+qna['answers'][i]['id']+`">Remove</button>
                                 </div>
@@ -376,8 +376,8 @@
 
                   }
 
+                  
                   $(".editModalAnswers").append(html);
-
                 }
 
               });

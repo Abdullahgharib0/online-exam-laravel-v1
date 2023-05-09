@@ -14,7 +14,6 @@
           <th>Name</th>
           <th>Email</th>
           <th>Type</th>
-          <th>Edit</th>
           <th>Delete</th>
         </thead>
         <tbody>
@@ -25,11 +24,6 @@
                 <td>{{ $doctor->name }}</td>
                 <td>{{ $doctor->email }}</td>
                 <td>{{ $doctor->type }}</td>
-                <td>
-                      <button type="button" data-id="{{ $doctor->id }}" data-name="{{ $doctor->name }}"  data-email="{{ $doctor->email }}" data-type="{{ $doctor->type }}" class="btn btn-info editButton" data-toggle="modal" data-target="#editDoctorModel">
-                        Edit
-                    </button>
-                </td>
                 <td>
                   <button type="button" data-id="{{ $doctor->id }}" class="btn btn-danger deleteButton" data-toggle="modal" data-target="#deleteDoctorModel">
                     Delete

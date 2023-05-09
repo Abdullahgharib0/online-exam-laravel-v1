@@ -1,4 +1,4 @@
-@extends('layout.layout-common')
+@extends('layout.student-layout')
 
 @section('space-work')
 

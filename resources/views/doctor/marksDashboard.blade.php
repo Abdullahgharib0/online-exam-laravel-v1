@@ -80,9 +80,10 @@
                                 <label>Passing Marks</label>
                             </div>
                             <div class="col-sm-6">
+                              <input type="hidden" name="exam_id" id="exam_id">
                               <input type="text"
                               onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46"
-                              name="pass_marks" placeholder="Enter Passing Marks" id="pass_marks" required>
+                              name="pass_marks" disabled placeholder="Enter Passing Marks" id="pass_marks" required>
                             </div>
                         </div>
 
@@ -115,20 +116,20 @@
 
                 totalQna = totalq;
 
-                $('#pass_marks').val($(this).attr('data-pass-marks'))
+                $('#pass_marks').val($(this).attr('data-pass-marks') )
 
             });
 
             $('#marks').keyup(function() {
 
-                $('#tmarks').val( ($(this).val()*totalQna).toFixed(1) );
+                $('#tmarks').val( ( $(this).val()*totalQna).toFixed(1) );
             });
 
             $('#pass_marks').keyup(function(){
 
               $('.pass-error').remove();
               var tmarks = $('#tmarks').val();
-              var pmarks = $(this).val();
+              var pmarks = $(this).val( (tmarks*0.5) );
 
               if (parseFloat(pmarks) >= parseFloat(tmarks)) {
                 

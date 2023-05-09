@@ -23,14 +23,14 @@
                 <td>{{ $attempt->exam->exam_name }}</td>
                 <td>
                   @if ($attempt->status == 0)
-                    <span style="color: red">pending</span>
+                    <span style="color: green">Approved</span>
                   @else
                     <span style="color: green">Approved</span>
                   @endif
                 </td>
                 <td>
                   @if ($attempt->status == 0)
-                    <a href="#" class="reviewExam" data-id="{{ $attempt->id }}" data-toggle="modal" data-target="#reviewExamModal">Review $ Approved</a>
+                  completed
                   @else
                     completed
                   @endif
@@ -50,7 +50,7 @@
 
 
 
-<!-- Modal -->
+{{-- <!-- Modal -->
 <div class="modal fade" id="reviewExamModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -73,7 +73,7 @@
       </form>
     </div>
   </div>
-</div>
+</div> --}}
 
 
 <script>

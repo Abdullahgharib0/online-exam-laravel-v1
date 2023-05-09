@@ -8330,3 +8330,10 @@ a[data-toggle="collapse"] {
 
 .subscribe-form .form-control {
   background: #4897fc; }
+
+  .profile-nav a{
+    text-decoration: none;
+  }
+  .profile-nav .active a{
+    color: white !important;
+  }

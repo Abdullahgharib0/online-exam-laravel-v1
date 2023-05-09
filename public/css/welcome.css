@@ -10857,3 +10857,34 @@ html {
   border-radius: 10px;
 
 }
+.text1{
+  background-color: #17a2b8 !important;
+  width: 510px;
+  text-align: right;
+  position: absolute;
+  top: 26%;
+  left: 42%;
+  right: 0;
+  color: #fff;
+  padding: 8px;
+  font-size: 28px;
+}
+.text2{
+  width: 510px;
+  text-align: right;
+  padding: 8px;
+  font-size: 22px;
+  margin-left: 630px;
+}
+.text3{
+  background-color: #17a2b8 !important;
+  width: 790px;
+  text-align: right;
+  position: absolute;
+
+  left: 24%;
+  right: 0;
+  color: #fff;
+  padding: 8px;
+  font-size: 28px;
+}

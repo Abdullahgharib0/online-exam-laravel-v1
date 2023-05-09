@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Illuminate\Support\facades\URL;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rules\Password;
 
 class AuthController extends Controller
 {
@@ -38,9 +40,14 @@ class AuthController extends Controller
     public function studentRegister(Request $request)
     {
       $request->validate([
-        'name' => 'string|required|min:2',
+        'name' => [
+          'string','required','min:8','unique:users','alpha_num'
+      ],
         'email' =>'string|email|required|max:100|unique:users',
-        'password' =>'string|required|confirmed|min:6',
+        'password' =>[
+          'string','required','confirmed',
+          Password::min(8)->letters()->numbers()->mixedCase()->symbols()
+        ],
 
       ]);
 
@@ -224,8 +231,48 @@ class AuthController extends Controller
               };
         }
 
+        // profile user student
+        public function edit_profile()
+        {
+          return view('student.profile.edit_profile');
+        }
 
+        public function update_profile(Request $request)
+        {
+            $user = Auth::user();
+
+            $data = $this->validate($request, [
+                'name' => 'required',
+                'email' => 'required',
+            ]);
+
+            $user->name = $data['name'];
+            $user->email = $data['email'];
+            $user->save();
+            return redirect('/profile/edit_profile')->with('success', 'User has been updated!');
+        }
+
+        // profile user doctor
+      public function editProfileD()
+      {
+        return view('doctor.profile.edit_profileD');
+      }
+
+      public function updateProfileD(Request $request)
+  {
+      $user = Auth::user();
+
+      $data = $this->validate($request, [
+          'name' => 'required',
+          'email' => 'required',
+      ]);
+
+      $user->name = $data['name'];
+      $user->email = $data['email'];
+      $user->save();
+
+      return redirect('/profile/edit-profileD')->with('success', 'User has been updated!!');
+  }
         
-
 }
 

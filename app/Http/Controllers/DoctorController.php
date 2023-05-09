@@ -11,10 +11,7 @@ use App\Models\Question;
 use App\Models\Answer;
 use App\Models\QnaExam;
 use App\Models\ExamAnswer;
-
-
-
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail as FacadesMail;
 use Illuminate\Support\Facades\Mail;
@@ -462,4 +459,6 @@ class DoctorController extends Controller
             }
         }
         
+
+      
       }

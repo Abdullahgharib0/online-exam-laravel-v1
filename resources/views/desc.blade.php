@@ -22,42 +22,35 @@
         @include('layout.header')
         <!-- end navbar -->
     </header>
-    <center>
         <div class="desc">
           <br><h3 class="text-right fs-5 pt-3 fw-bold w-75 me-5">
-             <span class="text-white bg-dark ">مقدمة</span>
+             <span class="bg-info text-white p-2">مقدمة</span>
              <br><br>
              .إننا نهتم بشكل كبير بخصوصية زوار موقعنا، ونتعهد بحمايتها
              <br>
              
             </h3>
             <br><br>
-          <br><h3 class="text-right fs-5 pt-3 fw-bold w-75 me-5">
-             <span class="text-white bg-dark ">حقوق التأليف
-              </span>
-             <br><br>
-                 تم إنشاء هذا الموقع بواسطة عبدالله غريب
-             <br>
-             
-            </h3>
-            <br><br>
-          <h2 class="text-right fs-5 pt-3 fw-bold w-75 me-5">ميزات اختبارات قصيرة في إنشاء اختبار إلكتروني</h2>
-          <h3 class="desc1 text-right fs-5 pt-5 fw-bold w-75 me-5 ">
-            إنشاء اختبار إلكتروني
+          <h2 class="text1"> : الاختبارات الالكترونية لها عدة مميزات منها </h2>
+          
+          <h3 class="text2 text-right mt-5">
+             سهولة اعدادها وتطبيقها ومراجعه النتائج -<br><br>
+             التنوع في الأسئلة الموضوعية -<br><br>
+             امكانيه تحديد وقت زمني تنازلي للاختبار -<br><br>
           </h3>
-          <p class="desc1  text-right fs-5 pt-5 fw-bold w-75 me-5 ">سواء كنت جديدا في الاختبارات عبر الإنترنت أو تبحث فقط عن بعض النصائح الجديدة ،<br> سيوضح لك منشور المدونة هذا كيفية وضع قواعد فعالة للاختبارات عبر الإنترنت التي تتجنب الارتباك وتوجه طلابك إلى تجربة اختبار ناجحة عبر الإنترنت. دعنا نستكشف</p>
-          <h2 class="desc1  text-right fs-5 pt-5 fw-bold w-75 me-5 ">: القواعد التي يجب اتباعها خلال جميع الاختبارات المراقبة عبر الانترنت</h2>
-          <p class="desc1  text-right fs-5  fw-bold w-75 me-5 ">
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> برنامج إنشاء اختبار إلكتروني على الوب (مجاناً) </h4>
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> الحساب التلقائي لدرجة الاختبار الإلكتروني لكل متقدم للاختبار </h4>
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> ترتيب أسئلة الاختبار الإلكتروني بشكل عشوائي </h4>
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> ترتيب خيارات الأسئلة متعددة الخيارات بشكل عشوائي في الاختبار الإلكتروني </h4>
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> ضبط تاريخ ووقت بدء ونهاية الاختبار الإلكتروني تلقائياً </h4>
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> قديم تقرير نتائج خاص لكل متقدم للاختبار </h4>
-            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> استخدام أحدث البنى والتقنيات في العالم لتحقيق استقرار إجراء أي عدد من الاختبارات الإلكترونية في الوقت نفسه </h4>
+          
+          <p class="desc1  text-right fs-5 pt-5 fw-bold w-75 me-5 ">سواء كنت جديدا في الاختبارات عبر الإنترنت أو تبحث فقط عن بعض النصائح الجديدة  سيوضح لك منشور المدونة هذا<br> كيفية وضع قواعد فعالة للاختبارات عبر الإنترنت التي تتجنب الارتباك وتوجه طلابك إلى تجربة اختبار ناجحة عبر الإنترنت <br>. دعنا نستكشف</p><br>
+          <h2 class="text3">: القواعد التي يجب اتباعها خلال جميع الاختبارات المراقبة عبر الانترنت</h2>
+          <br><br><p class="desc1  text-right fs-5  fw-bold w-75 me-5 ">
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .برنامج إنشاء اختبار إلكتروني على الويب (مجاناً) </h4>
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .الحساب التلقائي لدرجة الاختبار الإلكتروني لكل متقدم للاختبار</h4>
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .ترتيب أسئلة الاختبار الإلكتروني بشكل عشوائي </h4>
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .ترتيب خيارات الأسئلة متعددة الخيارات بشكل عشوائي في الاختبار الإلكتروني </h4>
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .ضبط تاريخ ووقت بدء ونهاية الاختبار الإلكتروني تلقائياً </h4>
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .تقديم تقرير نتائج خاص لكل متقدم للاختبار </h4>
+            <h4 class="desc1  text-right fs-5 pt-3 fw-bold w-75 me-5 "> .استخدام أحدث البنى والتقنيات في العالم لتحقيق استقرار إجراء أي عدد من الاختبارات الإلكترونية في الوقت نفسه </h4>
           </p>
           </div>
-    </center>
     <br><br>
     <footer>
       @include('layout.footer')

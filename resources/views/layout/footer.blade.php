@@ -26,15 +26,15 @@
 <div class="col-xs-12 col-sm-6 col-md-4">
 <div class="widget no-box">
 <h5 class="widget-title">Quick Links<span></span></h5>
-<ul class="thumbnail-widget">
+<ul class="list-group">
 <li>
-<div class="thumb-content"><a href="/desc">&nbsp;Terms of use</a></div> 
+<div class="list-group"><a href="/desc">&nbsp;Terms of use</a></div> 
 </li>
 <li>
-<div class="thumb-content"><a href="/login">&nbsp;Login</a></div> 
+<div class="list-group"><a href="/login">&nbsp;Login</a></div> 
 </li>
 <li>
-<div class="thumb-content"><a href="/register">&nbsp;Register</a></div> 
+<div class="list-group"><a href="/register">&nbsp;Register</a></div> 
 </li>
 </ul>
 </div>

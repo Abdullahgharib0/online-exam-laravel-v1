@@ -35,7 +35,6 @@ Route::post('/login',[AuthController::class, 'userLogin'])->name('userLogin');
 
 
 
-
 Route::get('/logout',[AuthController::class, 'logout']);
 
 
@@ -47,6 +46,7 @@ Route::post('/forget-password',[AuthController::class, 'forgetPassword'])->name(
 
 Route::get('/reset-password',[AuthController::class, 'resetPasswordLoad']);
 Route::post('/reset-password',[AuthController::class, 'resetPassword'])->name('resetPassword');
+
 
 
 
@@ -90,6 +90,9 @@ Route::group(['middleware'=>['web','checkDoctor']],function(){
   Route::get('/doctor/dashboard',[AuthController::class, 'doctorDashboard']);
   
 
+  //profile update
+  Route::get('profile/edit-profileD',[AuthController::class, 'editProfileD'])->name('editProfileD');
+  Route::post('profile/update-profileD',[AuthController::class, 'updateProfileD'])->name('updateProfileD');
 
 
 
@@ -142,4 +145,9 @@ Route::group(['middleware'=>['web','checkStudent']],function(){
   Route::get('/results',[ExamController::class,'resultDashboard'])->name('resultDashboard');
 
   Route::get('/review-student-qna',[ExamController::class,'reviewQna'])->name('reviewStudentQna');
+
+  //profile update
+  Route::get('profile/edit_profile',[AuthController::class, 'edit_profile'])->name('edit_profile');
+  Route::post('profile/update_profile',[AuthController::class, 'update_profile'])->name('update_profile');
+
 });

@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->integer('exam_id');
             $table->integer('user_id');
-            $table->integer('status')->default(0);
-            $table->float('marks')->nullable();
+            $table->integer('status')->default(1);
+            $table->float('marks')->default(0);
             $table->timestamps();
         });
     }
