@@ -57,7 +57,7 @@
                                   <div class="card h-100 shadow border-0">
                                       <img class="card-img-top" src="../images/What Students Should Expect.jpg" alt="..." />
                                       <div class="card-body p-4">
-                                          <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                          <div class="badge bg-primary bg-gradient rounded-pill mb-2">Hello Sir</div>
                                           <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">ما قبل الامتحان</h5></a>
                                           <h6 class="card-text mb-0"><span class="fa fa-chevron-circle-right"></span> جدولة الاختبارات وفقا للجدول الزمني وتعيين مراقبين عبر الإنترنت  </h6><br>
                                           <h6 class="card-text mb-0"><span class="fa fa-chevron-circle-right"></span> تخطيط الأسئلة وإنشائها وإدارتها </h6>
@@ -78,7 +78,7 @@
                                   <div class="card h-100 shadow border-0">
                                       <img class="card-img-top" src="../images/images.png" alt="..." />
                                       <div class="card-body p-4">
-                                          <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                          <div class="badge bg-primary bg-gradient rounded-pill mb-2">Hello Sir</div>
                                           <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">أثناء الامتحان                                           </h5></a>
                                           <h6 class="card-text mb-0"><span class="fa fa-chevron-circle-right"></span> تظهر للامتحانات من أجهزة الكمبيوتر / الأجهزة المحمولة </h6><br>
                                           <h6 class="card-text mb-0"><span class="fa fa-chevron-circle-right"></span> التحقق من تفاصيل الطالب وإدارة الحضور في الوقت الفعلي </h6><br>
