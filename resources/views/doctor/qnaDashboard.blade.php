@@ -196,7 +196,7 @@
             $("#addQna").submit(function (e) {
                 e.preventDefault();
 
-                if($(".answer").length < 4){
+                if($(".answer").length >= 4){
                     $(".error").text("please add minimum four answers.");
                     setTimeout(function() {
                       $(".error").text("");

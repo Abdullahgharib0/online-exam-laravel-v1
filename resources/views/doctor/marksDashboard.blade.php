@@ -83,7 +83,7 @@
                               <input type="hidden" name="exam_id" id="exam_id">
                               <input type="text"
                               onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode == 46"
-                              name="pass_marks" disabled placeholder="Enter Passing Marks" id="pass_marks" required>
+                              name="pass_marks"  placeholder="Enter Passing Marks" id="pass_marks" required>
                             </div>
                         </div>
 

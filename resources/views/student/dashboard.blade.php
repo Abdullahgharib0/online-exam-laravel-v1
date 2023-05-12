@@ -14,7 +14,7 @@
     <th>Time</th>
     <th>Total Attempt</th>
     <th>Available Attempt</th>
-    <th>Copy Link</th>
+    <th>Exam Link</th>
   </thead>
 
   <tbody>
@@ -30,7 +30,7 @@
             <td>{{ $exam->time }} Hrs</td>
             <td>{{ $exam->attempt }} Time</td>
             <td>{{ $exam->attempt_counter }}</td>
-            <td><a href="#" data-code="{{ $exam->enterance_id }}" class="copy"><i class="fa fa-copy"></i></a></td>
+            <td><a href="#" data-code="{{ $exam->enterance_id }}" class="copy btn btn-primary text-white">Start Exam</a></td>
         </tr>
     @endforeach
     
@@ -47,10 +47,10 @@
 
   <script>
     $(document).ready(function(){
+      $(this).parent().prepend();
       
         $('.copy').click(function(){
-          $(this).parent().prepend('<span class="copied_text">copied</span>');
-
+          
           var code = $(this).attr('data-code');
           var url = "{{URL::to('/')}}/exam/"+code;
 
@@ -60,12 +60,15 @@
           document.execCommand("copy");
           $temp.remove();
           
-          setTimeout(() => {
-            $('.copied_text').remove();
-          }, 1000);
+          $('a').click(function () {
+            window.open("{{URL::to('/')}}/exam/"+code, 'window' );
+            return false;
+          });
         });
 
     });
+    
+
   </script>
 
 @endsection
