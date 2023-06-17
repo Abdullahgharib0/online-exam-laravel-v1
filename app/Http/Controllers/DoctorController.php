@@ -230,12 +230,11 @@ class DoctorController extends Controller
                 $is_correct = 0;
                 if($request->is_correct == $value){
                   $is_correct = 1;
-
                 }
 
                 Answer::where('id',$key)
                 ->update([
-                  'question_id' => $request->question_id,
+                  'questions_id' => $request->question_id,
                   'answer' => $value,
                   'is_correct' => $is_correct
                 ]);
@@ -257,9 +256,9 @@ class DoctorController extends Controller
               }
 
               Answer::insert([
-                'question_id' => $request->question_id,
-                'answer' => $answer,
-                'is_correct' => $is_correct
+                'questions_id' => $request->question_id,
+                  'answer' => $answer,
+                  'is_correct' => $is_correct
               ]);
 
             }

@@ -117,7 +117,7 @@
 
                   </div>
                   <div class="modal-footer">
-                    <span class="addError" style="color:red;"></span>
+                    <span class="editError" style="color:red;"></span>
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       <button type="submit" class="btn btn-primary">Update Q&A</button>
                   </div>
@@ -389,8 +389,8 @@
             $("#editQna").submit(function (e) {
                 e.preventDefault();
 
-                if($(".editAnswers").length > 2){
-                    $(".editError").text("please add minimum two answers.");
+                if($(".editAnswers").length >= 5){
+                    $(".editError").text("please add maxmum four answers.");
                     setTimeout(function() {
                       $(".editError").text("");
                     }, 2000);
