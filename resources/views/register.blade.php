@@ -25,7 +25,7 @@
                 @csrf
             
             
-                <input type="text" name="name" placeholder="Enter Name" class="form-control-lg w-100">
+                <input type="text" name="name" placeholder="Enter Name" class="form-control-lg w-100" pattern="^[a-zA-Z][a-zA-Z0-9-_.]">
                 <br><br>
                 <input type="email" name="email" placeholder="Enter Email" class="form-control-lg w-100">
                 <br><br>
